@@ -1,13 +1,14 @@
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import AnimatedRoutes from "./Components/AnimatedRoutes";
+
+
 function App() {
 
-
   return (
-    <div className="App">
+    <div className="app " >
       <BrowserRouter>
-        <AnimatedRoutes/>
+        <AnimatedRoutes />
       </BrowserRouter>
 
     </div>

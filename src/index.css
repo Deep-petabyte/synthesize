@@ -7,10 +7,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  transition: all 100ms;
 }
-body {
+.body {
   background-color: #1d3557;
 }
+
 /* background animations for splash screen */
 .splash-bg {
   background: linear-gradient(
@@ -99,7 +101,10 @@ body {
 .roller #rolltext {
   position: absolute;
   top: 0;
-  animation: slide 8s infinite;
+  animation-name: slide;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
 
 @keyframes slide {
@@ -129,7 +134,9 @@ body {
   }
 
   .roller #rolltext {
-    animation: slide-mob 5s infinite;
+    animation-name: slide-mob;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
 
   @keyframes slide-mob {

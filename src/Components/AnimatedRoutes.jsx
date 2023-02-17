@@ -10,7 +10,7 @@ const AnimatedRoutes = () => {
     <AnimatePresence exitBeforeEnter initial={false}>
       <Routes location={location} key={location.pathname}>
         <Route exact path="/" element={<SplashScreen />} />
-        <Route exact path="/User" element={<User />} />
+        <Route exact path="/User" element={<User  />} />
         <Route exact path="/Dj" element={<Dj />} />
       </Routes>
     </AnimatePresence>

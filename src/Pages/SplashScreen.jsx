@@ -11,7 +11,7 @@ const SplashScreen = () => {
           className=" splash-bg  w-screen h-screen">
           <div className="bg-white bg-opacity-80 w-screen h-screen flex flex-col justify-center items-center backdrop-blur-sm">
               <div className="roller mb-6">
-    <span id="rolltext"> <span className="text-4xl font-bold text-[#1d3557] logo ">Synthesize</span><br/>
+    <span id="rolltext"> <span className="text-5xl font-bold text-[#1d3557] logo ">Synthesize</span><br/>
       <span className="spare-time">Reinvent Music</span> <br/>
       <span className="spare-time">Simplicity</span> <br/>
     <span className="spare-time">Feel the beats!</span><br/></span>

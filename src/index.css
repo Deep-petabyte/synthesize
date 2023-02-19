@@ -9,8 +9,9 @@
   font-family: "Poppins", sans-serif;
   transition: all 100ms;
 }
-.body {
+body {
   background-color: #1d3557;
+  overflow-x: hidden;
 }
 
 /* background animations for splash screen */
@@ -159,4 +160,11 @@
 }
 .open-set {
   top: 0;
+}
+.show-avatar {
+  top: 90px;
+}
+.while-search {
+  top: 50px;
+  transform: scale(1);
 }

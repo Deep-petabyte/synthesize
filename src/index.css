@@ -162,9 +162,17 @@ body {
   top: 0;
 }
 .show-avatar {
-  top: 90px;
+  width: 180px;
+  height: 280px;
+  padding: 0.75rem;
+  scale: 1 !important;
+}
+.scale {
+  scale: 0;
 }
 .while-search {
-  top: 50px;
-  transform: scale(1);
+  top: 40px;
+}
+.open-dj {
+  left: 10px;
 }

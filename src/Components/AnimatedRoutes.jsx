@@ -7,7 +7,7 @@ import SplashScreen from "../Pages/SplashScreen";
 const AnimatedRoutes = () => {
   const location = useLocation();
   return (
-    <AnimatePresence exitBeforeEnter initial={false}>
+    <AnimatePresence mode='wait' initial={false}>
       <Routes location={location} key={location.pathname}>
         <Route exact path="/" element={<SplashScreen />} />
         <Route exact path="/User" element={<User  />} />

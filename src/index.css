@@ -82,7 +82,7 @@ body {
   line-height: 4rem;
   position: relative;
   overflow: hidden;
-  width: 600px;
+  width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -125,7 +125,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .roller {
-    height: 2.6rem;
+    height: 3.6rem;
     line-height: 2.125rem;
   }
 

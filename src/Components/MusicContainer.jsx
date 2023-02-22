@@ -15,9 +15,9 @@ const openDj = () => {
   avatarSrc()
 }
   return (
-      <div className='w-full pt-10 px-36 mt-32'>
+      <div className='w-full pt-10 px-5 lg:px-36 mt-32'>
           <h1 className='logo text-4xl mb-4 font-semibold text-center'>Recommended</h1>
-          <div className='grid grid-cols-4 grid-rows-3 gap-3 row-gap-3 w-full'>
+          <div className='grid grid-cols-2 lg:grid-cols-4 grid-rows-3 gap-3 row-gap-3 w-full'>
         <MusicBox openDj={ openDj} />
           <MusicBox />
           <MusicBox/>

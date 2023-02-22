@@ -36,7 +36,7 @@ setRef.current.classList.toggle("open-set")
     localStorage.setItem("url",checkAvatar)
 
   return (
-      <nav className=' fixed top-0 left-0 right-0 z-50 px-36 py-4 h-[100px] justify-between w-full flex items-center dark:text-white bg-white bg-opacity-60 backdrop-blur-sm'>
+      <nav className=' fixed top-0 left-0 right-0 z-50 px-6 lg:px-36 py-4 h-[100px] justify-between w-full flex items-center dark:text-white bg-white bg-opacity-60 backdrop-blur-sm'>
           <div className='flex justify-between items-center w-full'>
               <div>
                   <Link to="/" className='logo text-[#1d3557] dark:text-white text-4xl font-bold'>Synthesize</Link>
@@ -47,7 +47,7 @@ setRef.current.classList.toggle("open-set")
               animate={{ y: 100 }}
               transition={{duration: 2}}
               exit={{y: -990}}
-              ref={setRef} className='bg-[#1d3557] dark:bg-white dark:text-white rounded-xl absolute -top-[990px] z-20 right-20 w-[270px] h-[350px] duration-700 flex flex-col items-center ' >
+              ref={setRef} className='bg-[#1d3557] dark:bg-white dark:text-white rounded-xl absolute -top-[990px] z-20 right-2 lg:right-20 w-[270px] h-[350px] duration-700 flex flex-col items-center ' >
               <motion.div whileTap={{scale: 1.5}}  className='rounded-full w-16 h-16 dark:bg-[#1d3557] bg-white mt-14 overflow-hidden'>
                  { checkAvatar && <img src={checkAvatar} alt=""  className='object-cover w-full h-full'/>}
               </motion.div>
@@ -64,7 +64,7 @@ setRef.current.classList.toggle("open-set")
                    transition={{duration: 2}}
                   animate={{ scale: 1 }}
                   exit={{ scale: 0}}
-                  ref={avatarRef} className="absolute   top-[40px] -left-[160px]  h-[280px] w-[180px] scale bg-[grey] z-20 p-0 grid grid-cols-3 overflow-hidden duration-700">
+                  ref={avatarRef} className="absolute   top-[40px] -left-[90px] lg:-left-[160px]  h-[280px] w-[180px] scale bg-[grey] z-20 p-0 grid grid-cols-3 overflow-hidden duration-700">
                      { navbarImages.map((avatar, index) => <motion.div key={index} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} onClick={() => avatarSetter(avatar.url)} className='rounded-md h-10 w-10 gap-4  cursor-pointer overflow-hidden'>
                    <img src={avatar.url} alt=""  className='object-cover w-full h-full'/> 
               </motion.div> )}
